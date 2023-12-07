@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+   }
+   
+   #calendar {
+    display: inline-block;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+   }
+   
+   .dayNames div, .days div {
+    display: inline-block;
+    width: 14.28%;
+    padding: 5px 0;
+    text-align: center;
+    box-sizing: border-box;
+   }
+   
+   .day {
+    border: 1px solid #e6e6e6;
+    padding: 10px 0;
+    cursor: pointer;
+   }
+   
+   .day:hover {
+    background-color: #f2f2f2;
+   }
+   
+   .current {
+    background-color: #4CAF50;
+    color: white;
+   }
+.month-year {
+    margin: 0;
+}
+
+.calendar-weekdays {
+ display: inline-block;
+    justify-content: space-between;
+    padding: 100px 0;
+    background-color: #e29d9d;
+}
+
+.calendar-days {
+    display: inline;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    padding: 5px 0;
+}
+
+.calendar-day {
+    background-color: aqua;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.add-meeting {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+}
+
